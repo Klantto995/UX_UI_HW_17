@@ -1,0 +1,74 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+};
+
+.logo {
+    width: 23%;
+    padding: 1%;
+}
+
+.logo img {
+    text-align: center;
+    padding-top: 5%;
+}
+
+nav {
+    width: 73%;
+    padding: 10px;
+}
+
+nav ul {
+    width: 50%;
+    margin-left: auto;
+    list-style: none;
+}
+
+nav li { 
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 25px;
+}
+
+.heroimg {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.writing {
+    margin-bottom: 23%;
+}
+
+.writing p {
+    width: 200px;
+}
+
+footer {
+    background-color: #ffffff;
+    display: flex;
+}
+
+footer div {
+    margin-top: 5px;
+}
+
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+    padding-top: 17px;
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    padding-top: 25px;
+    margin-left: 75px;
+}
