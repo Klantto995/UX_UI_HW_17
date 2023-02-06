@@ -440,4 +440,12 @@ footer li {
     font-family: 'Mulish', sans-serif;
     color: #ffffff;
     font-weight: 300;
+} 
+
+@media only screen and (max-width: 600) {
+    .workgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
 }
