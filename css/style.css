@@ -1,52 +1,52 @@
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
-};
-
-.logo {
-    width: 23%;
-    padding: 1%;
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
-.logo img {
-    text-align: center;
-    padding-top: 5%;
+.navitems {
+    text-align: right;
 }
 
-nav {
-    width: 73%;
-    padding: 10px;
-}
+.navitems ul {
 
-nav ul {
-    width: 50%;
-    margin-left: auto;
     list-style: none;
 }
 
-nav li { 
+.navitems li {
     display: inline-block;
-    margin-left: 50px;
-    padding-top: 25px;
+    margin-top: 25px;
+    padding-left: 50px;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 300;
+    font-size: 24px;
 }
 
 .heroimg {
-    height: 600px;
-    padding: 25px;
-}
-
-.content {
-    width: 500px;
-    margin: 0 auto;
     display: flex;
+    height: 65vh;
+    justify-content: center;
+    margin-top: 7rem;
 }
 
-.writing {
-    margin-bottom: 23%;
+.selfimage {
+    padding-right: 150px;
+}
+
+
+.writing h1 {
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 700;
+    font-size: 64px;
 }
 
 .writing p {
-    width: 200px;
+    width: 600px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 footer {
@@ -71,4 +71,373 @@ footer li {
     display: inline-block;
     padding-top: 25px;
     margin-left: 75px;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.mywork {
+    width: 100%;
+    max-width: 1887px;
+    margin-top: 100px;
+    margin-right: 150px;
+    text-align: center;
+
+}
+
+.workgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    display: block;
+    width: 950px;
+    height: 750px;
+    background-image: url('../images/restorehope.png');
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0px;
+}
+
+.container2 {
+    position: relative;
+    display: block;
+    width: 950px;
+    height: 750px;
+    background-image: url('../images/nasa.png');
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0px;
+}
+
+.container3 {
+    position: relative;
+    display: block;
+    width: 950px;
+    height: 750px;
+    background-image: url('../images/recipebox.png');
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0px;
+}
+
+.container4 {
+    position: relative;
+    display: block;
+    width: 950px;
+    height: 750px;
+    background-image: url('../images/smithsonian.jpg');
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0px;
+}
+
+
+.hoverdiv {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.container:hover {
+    border-radius: 150px;
+}
+
+.container:hover .hoverdiv {
+    opacity: 1;
+    border-radius: 150px;
+}
+
+.container2:hover {
+    border-radius: 150px;
+}
+
+.container2:hover .hoverdiv {
+    opacity: 1;
+    border-radius: 150px;
+}
+
+.container3:hover {
+    border-radius: 150px;
+}
+
+.container3:hover .hoverdiv {
+    opacity: 1;
+    border-radius: 150px;
+}
+
+.container4:hover {
+    border-radius: 150px;
+}
+
+.container4:hover .hoverdiv {
+    opacity: 1;
+    border-radius: 150px;
+}
+
+.hoverdiv h3 {
+    font-family: 'Montserrat', sans-serif, bold;
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+    line-height: 59px;
+    margin: 0;
+}
+
+.hoverdiv p {
+    font-family: 'Source Sans Pro' , sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    margin-top: 30px;
+    letter-spacing: 0.15em;
+
+}
+
+.myskills {
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.flexcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+
+.tools {
+    padding-right: 20px;
+}
+
+.design {
+    padding-right: 65px;
+}
+
+.research {
+    padding-right: 20px;
+}
+
+.headline {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 32px;
+    color: #000;
+    opacity: 31%;
+}
+
+.skillitems {
+    display: flex;
+    z-index: 100;
+}
+
+.skillitems h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.skillitems2 {
+    display: flex;
+    z-index: 100;
+}
+
+.skillitems2 h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.skillitems3 {
+    display: flex;
+    z-index: 100;
+}
+
+.skillitems3 h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.skillitems4 {
+    display: flex;
+    z-index: 100;
+}
+
+.skillitems4 h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.designitems {
+    display: flex;
+    z-index: 100;
+}
+
+.designitems h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.designitems2 {
+    display: flex;
+    z-index: 100;
+}
+
+.designitems2 h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.designitems3 {
+    display: flex;
+    z-index: 100;
+}
+
+.designitems3 h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.designitems4 {
+    display: flex;
+    z-index: 100;
+}
+
+.designitems4 h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.toolitems {
+    display: flex;
+    z-index: 100;
+}
+
+.toolitems h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.toolitems2 {
+    display: flex;
+    z-index: 100;
+}
+
+.toolitems2 h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.toolitems3 {
+    display: flex;
+    z-index: 100;
+}
+
+.toolitems3 h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.toolitems4 {
+    display: flex;
+    z-index: 100;
+}
+
+.toolitems4 h3 {
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 28px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #8AAAA5BF;
+    font-family: 'Mulish', sans-serif;
+    color: #ffffff;
+    font-weight: 300;
 }
